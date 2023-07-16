@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+        }
+        #b1{
+            background-color: lightgreen;
+        }
+        #b2{
+            background-color: rgb(211, 18, 18);
+        }
+        h1{
+            color: aliceblue;
+        }
+    </style>
+    <h1>Bulb</h1>
+    <button id="b1" onclick="turnon()">ON</button>
+    <img id="a" src="/assert/bulb off.jpg"alt="Nothing">
+    <button id="b2" onclick="turnoff()">OFF</button>
+    <script>
+        function turnon()
+        {
+            document.getElementById('a').src="/assert/bulb on.jpg";
+        }
+        function turnoff()
+        {
+            document.getElementById('a').src="/assert/bulb off.jpg";
+        }
+
+    </script>
+</body>
+</html>
